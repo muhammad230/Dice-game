@@ -1,13 +1,10 @@
-import styled from "styled-components"
+import Home from "./components/Home"
 
-const Button = styled.button`
-background-color: black;
-`;
 
 function App() {
   return (
     <>
-     <button>this is button</button>
+    <Home/>
     </>
   )
 }
