@@ -1,5 +1,5 @@
 import styled from "styled-components"
-const Home = () => {
+const Home = ({ toggle }) => {
   return (
     <Container>
       <div>
@@ -8,7 +8,7 @@ const Home = () => {
       
       <div className="contant">
         <h1>Dice Game</h1>
-        <Button>Play Now</Button>
+        <Button onClick={toggle}>Play Now</Button>
       </div>
     </Container>
   )
