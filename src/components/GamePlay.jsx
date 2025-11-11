@@ -1,9 +1,12 @@
+import NumberSelector from "./NumberSelector";
+import TotalScore from "./TotalScore";
 
 const GamePlay = () => {
   return (
-    <div>
-      game play
-    </div>
+    <main>
+      <TotalScore/>
+      <NumberSelector/>
+    </main>
   )
 }
 
