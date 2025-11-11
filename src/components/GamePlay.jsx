@@ -1,9 +1,10 @@
+import TotalScore from "./TotalScore";
 
 const GamePlay = () => {
   return (
-    <div>
-      game play
-    </div>
+    <main>
+      <TotalScore/>
+    </main>
   )
 }
 
