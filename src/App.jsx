@@ -6,7 +6,7 @@ import './App.css'
 
 function App() {
 
-  const [isGameStarted, setisGameStarted] = useState(true);
+  const [isGameStarted, setisGameStarted] = useState(false);
 
   const toggleGamePlay = () => {
     setisGameStarted( (prev) => !prev); 
