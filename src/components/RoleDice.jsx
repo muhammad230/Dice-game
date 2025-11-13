@@ -23,6 +23,6 @@ flex-direction: column;
 align-items: center;
 margin-top: 48px    ;
 p{
-    font-size: 24px;
+    font-size: 25px;
 }
 `;
