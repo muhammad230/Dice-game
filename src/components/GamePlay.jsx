@@ -4,12 +4,14 @@ import TotalScore from "./TotalScore";
 import RoleDice from "./RoleDice";
 import { useState } from "react";
 import { Button } from "../assets/styled/Button";
+import Rules from "./Rules";
 
 const GamePlay = () => {
     const [score, setScore] = useState(0)
     const [selectedNumber, setselectedNumber] = useState();
      const [currentDice, setcurrentDice] = useState(1)
      const [error, setError] = useState("");
+     const [showRules, setShowRules] = useState(false); 
 
       
        const genrateRandomNumber = (min, max) => {
@@ -17,6 +19,8 @@ const GamePlay = () => {
   };
   
   const roleDice = () => {
+
+
     if(!selectedNumber){
       setError("You have not selected any number")
       return;
@@ -34,6 +38,10 @@ const GamePlay = () => {
     setselectedNumber(undefined);
 
   };
+
+  const resetScore = () => {
+    setScore(0);
+  }
 
 
 
@@ -54,9 +62,10 @@ const GamePlay = () => {
       roleDice={roleDice}
       />
       <div className="btns">
-      <Button>Reset</Button>
-      <Button>Show Rules</Button>
+      <Button onClick={resetScore}>Reset</Button>
+      <Button onClick={() =>setShowRules((prev ) => !prev)}>{showRules ? "Hide" : "Show"} Rules</Button>
       </div>
+     {showRules && <Rules/>}
        
       
      
