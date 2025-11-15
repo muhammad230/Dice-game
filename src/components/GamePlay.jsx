@@ -20,7 +20,7 @@ const GamePlay = () => {
       setError("You have not selected any number")
       return;
     }
-    setError("");
+   
     const randomNumber = genrateRandomNumber (1, 7);
     setcurrentDice ((prev) => randomNumber);
 
@@ -41,6 +41,7 @@ const GamePlay = () => {
       <div className="top_section">
           <TotalScore score={score}/>
         <NumberSelector 
+        setError={setError}
         error={error}
         selectedNumber={selectedNumber}
         setselectedNumber={setselectedNumber}
