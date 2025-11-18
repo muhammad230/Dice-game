@@ -42,7 +42,7 @@ p{
   font-weight: 700px;
 }
 .error{
-  color: red;
+  color: #f50606;
 }
 `;
 

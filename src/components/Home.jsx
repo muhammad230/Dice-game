@@ -25,7 +25,7 @@ margin: 0 auto;
 height: 100vh;
 
 .contant h1{
-  font-size: 96px;
+  font-size: 95px;
   white-space: nowrap;
 }
 `;

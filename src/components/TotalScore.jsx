@@ -20,6 +20,6 @@ h1{
 }
 p{
     font-size: 24px ;
-    font-weight: 500px;
+    font-weight: 501px;
 }
 `;

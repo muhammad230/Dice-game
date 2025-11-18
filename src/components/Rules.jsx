@@ -19,7 +19,7 @@ const Rules = () => {
 export default Rules
 
 const RulesContainer = styled.div`
-background-color: #FBF1F1;
+background-color: #e7e2e2;
 padding: 20px;
 max-width: 800px;
 margin: 0 auto;
